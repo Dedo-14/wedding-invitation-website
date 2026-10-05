@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emma & Daniel | Wedding Invitation</title>
+    <meta
+      name="description"
+      content="Join us as we celebrate our wedding day with love, laughter, and a beautiful evening together."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <nav class="topbar">
+        <div class="brand">E & D</div>
+        <div class="nav-links">
+          <a href="#story">Our Story</a>
+          <a href="#details">Details</a>
+          <a href="#rsvp">RSVP</a>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <p class="eyebrow">You are invited to celebrate</p>
+        <h1>Emma <span>&</span> Daniel</h1>
+        <p class="date">Saturday, 14 September 2026</p>
+        <p class="location">The Rosewood Estate, California</p>
+        <a href="#rsvp" class="button primary">RSVP Now</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro section">
+        <div class="section-heading">
+          <p class="eyebrow accent">With joy in our hearts</p>
+          <h2>We invite you to our wedding celebration</h2>
+        </div>
+        <p>
+          We are delighted to invite you to share in our joy as we begin our new life together.
+          Your presence would mean the world to us as we celebrate love, family, and a lifetime of happiness.
+        </p>
+      </section>
+
+      <section class="story section" id="story">
+        <div class="story-card">
+          <div class="story-text">
+            <p class="eyebrow accent">Our Story</p>
+            <h2>From a first hello to forever</h2>
+            <p>
+              It all began with a simple conversation and a connection that felt like home. Over the years,
+              our love has grown through laughter, adventure, and countless beautiful memories. We are so grateful
+              to share this next chapter with the people who mean the most to us.
+            </p>
+          </div>
+          <div class="story-photo">
+            <div class="photo-placeholder">Photo</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="details section" id="details">
+        <div class="section-heading">
+          <p class="eyebrow accent">Wedding Details</p>
+          <h2>Save the date</h2>
+        </div>
+
+        <div class="details-grid">
+          <article class="detail-card">
+            <h3>Ceremony</h3>
+            <p>4:00 PM</p>
+            <p>Garden Pavilion</p>
+            <p>Rosewood Estate</p>
+          </article>
+
+          <article class="detail-card">
+            <h3>Reception</h3>
+            <p>6:00 PM</p>
+            <p>Grand Hall</p>
+            <p>Dinner & Dancing</p>
+          </article>
+
+          <article class="detail-card">
+            <h3>Dress Code</h3>
+            <p>Formal Elegant</p>
+            <p>Garden / Evening Attire</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="schedule section">
+        <div class="section-heading">
+          <p class="eyebrow accent">The Day</p>
+          <h2>Event Timeline</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <span>3:30 PM</span>
+            <p>Guest Arrival & Welcome Drinks</p>
+          </div>
+          <div class="timeline-item">
+            <span>4:00 PM</span>
+            <p>Ceremony Begins</p>
+          </div>
+          <div class="timeline-item">
+            <span>5:00 PM</span>
+            <p>Cocktail Hour</p>
+          </div>
+          <div class="timeline-item">
+            <span>6:00 PM</span>
+            <p>Reception & Dinner</p>
+          </div>
+          <div class="timeline-item">
+            <span>8:30 PM</span>
+            <p>Dancing & Celebration</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="rsvp section" id="rsvp">
+        <div class="section-heading">
+          <p class="eyebrow accent">Kindly Respond</p>
+          <h2>RSVP</h2>
+        </div>
+
+        <form class="rsvp-form" id="rsvpForm">
+          <div class="form-row">
+            <label>
+              Full Name
+              <input type="text" name="name" placeholder="Your full name" required />
+            </label>
+          </div>
+
+          <div class="form-row double">
+            <label>
+              Email
+              <input type="email" name="email" placeholder="your@email.com" required />
+            </label>
+            <label>
+              Number of Guests
+              <select name="guests">
+                <option value="1">1 Guest</option>
+                <option value="2" selected>2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label>
+              Attendance
+              <div class="radio-group">
+                <label><input type="radio" name="attendance" value="attending" checked /> Attending</label>
+                <label><input type="radio" name="attendance" value="regretfully-declines" /> Regretfully Declines</label>
+              </div>
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label>
+              Message
+              <textarea name="message" rows="4" placeholder="Leave a note for the couple"></textarea>
+            </label>
+          </div>
+
+          <button type="submit" class="button primary">Send RSVP</button>
+        </form>
+
+        <p id="formMessage" class="form-message" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>With love, Emma & Daniel</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
